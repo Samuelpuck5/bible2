@@ -138,10 +138,10 @@ class Arvore:
         if(self.name != '' and self.tex == 1):
             if(self.cap == 1):
                 if(self.ver == 1): #versiculo especifico
-                    pass
+                    return Textversiculo(self.name,self.num[-2],self.num[-1])
                 
                 else: #todo texto de um capitulo
-                    pass
+                    return Textcapitulo(self.num[-1],self.name)
             
             elif(self.sin == 1): #todo texto de um livro
                 return livro(self.name)

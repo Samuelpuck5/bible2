@@ -265,3 +265,28 @@ def textoLivro(nome: str):
             texto += " "+ver
 
     return texto
+
+def textoCapitulo(nome: str,capitulo: int):
+     indice = 0
+    
+     while(str(NOMES[indice]).lower() != nome.lower()):
+        indice+=1
+
+     texto = ''
+     for cap in CAPITULOS[indice][capitulo]:
+        texto += " "+cap
+
+     return texto
+
+def textoVersiculo( nome: str, capitulo: int, versiculo: int):
+    indice = 0
+    
+    while(str(NOMES[indice]).lower() != nome.lower()):
+        indice+=1
+
+    texto = ''
+    for cap in CAPITULOS[indice][capitulo][versiculo]:
+        texto += ""+cap
+
+    return texto
+    

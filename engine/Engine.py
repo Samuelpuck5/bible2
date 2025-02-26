@@ -128,3 +128,13 @@ def livro(index: int):
     resposta = textoLivro(index)
 
     return f"Esta escrito: {resposta}"
+
+def Textcapitulo(index: int, nome: str):
+    resposta = textoCapitulo(nome,index)
+
+    return f"Esta escrito: {resposta}"
+
+def Textversiculo(nome: str,capitulo: int, versiculo: int):
+    resposta= textoVersiculo(nome,capitulo,versiculo)
+
+    return f"Está escrito: {resposta}"
