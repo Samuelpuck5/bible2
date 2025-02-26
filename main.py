@@ -1,4 +1,5 @@
 from engine.Arvore import Classificador
+from engine.Data import NOMES
 
 if __name__ == "__main__":
     tree = Classificador()
@@ -6,7 +7,10 @@ if __name__ == "__main__":
         init = str(input(">>> "))
         
         if(init == '-e'):
+            print(NOMES)
             exit()
         
         if(len(init) > 1):
             tree.start(init)
+
+ 
